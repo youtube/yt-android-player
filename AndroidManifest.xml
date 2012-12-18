@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2012 Google Inc. All Rights Reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.examples.youtubeapidemo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+  <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="16"/>
+
+  <uses-permission android:name="android.permission.INTERNET"/>
+
+  <application android:label="@string/youtube_api_demo">
+
+    <activity
+        android:label="@string/youtube_api_demo"
+        android:name=".YouTubeAPIDemoActivity">
+      <intent-filter >
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+      <meta-data android:name="@string/isLaunchableActivity" android:value="false"/>
+    </activity>
+
+    <activity
+        android:label="@string/videowall_demo_name"
+        android:name=".VideoWallDemoActivity"
+        android:screenOrientation="landscape"
+        android:theme="@style/BlackNoBarsTheme"
+        android:configChanges="orientation|screenSize|keyboardHidden">
+      <meta-data android:name="@string/minVersion" android:value="11"/>
+      <meta-data android:name="@string/isLaunchableActivity" android:value="true"/>
+    </activity>
+
+    <activity
+        android:label="@string/playerview_demo_name"
+        android:name=".PlayerViewDemoActivity"
+        android:screenOrientation="nosensor"
+        android:configChanges="orientation|screenSize|keyboardHidden">
+      <meta-data android:name="@string/minVersion" android:value="8"/>
+      <meta-data android:name="@string/isLaunchableActivity" android:value="true"/>
+    </activity>
+
+    <activity
+        android:label="@string/fragment_demo_name"
+        android:name=".FragmentDemoActivity"
+        android:screenOrientation="nosensor"
+        android:configChanges="orientation|screenSize|keyboardHidden">
+      <meta-data android:name="@string/minVersion" android:value="11"/>
+      <meta-data android:name="@string/isLaunchableActivity" android:value="true"/>
+    </activity>
+
+    <activity
+        android:label="@string/player_controls_demo_name"
+        android:name=".PlayerControlsDemoActivity"
+        android:windowSoftInputMode="stateHidden">
+      <meta-data android:name="@string/minVersion" android:value="8"/>
+      <meta-data android:name="@string/isLaunchableActivity" android:value="true"/>
+    </activity>
+
+    <activity
+        android:label="@string/fullscreen_demo_name"
+        android:name=".FullscreenDemoActivity"
+        android:screenOrientation="sensor"
+        android:configChanges="keyboardHidden|orientation|screenSize"
+        android:theme="@style/BlackNoTitleBarTheme">
+      <meta-data android:name="@string/minVersion" android:value="8"/>
+      <meta-data android:name="@string/isLaunchableActivity" android:value="true"/>
+    </activity>
+
+    <activity
+        android:label="@string/action_bar_demo_name"
+        android:name=".ActionBarDemoActivity"
+        android:configChanges="keyboardHidden|orientation|screenSize"
+        android:theme="@style/OverlayActionBarTheme"
+        android:screenOrientation="sensorLandscape">
+      <meta-data android:name="@string/minVersion" android:value="11"/>
+      <meta-data android:name="@string/isLaunchableActivity" android:value="true"/>
+    </activity>
+
+    <activity
+        android:label="@string/standalone_player_demo_name"
+        android:name=".StandalonePlayerDemoActivity">
+      <meta-data android:name="@string/minVersion" android:value="8"/>
+      <meta-data android:name="@string/isLaunchableActivity" android:value="true"/>
+    </activity>
+
+    <activity
+        android:label="@string/intents_demo_name"
+        android:name=".IntentsDemoActivity">
+      <meta-data android:name="@string/minVersion" android:value="8"/>
+      <meta-data android:name="@string/isLaunchableActivity" android:value="true"/>
+    </activity>
+
+  </application>
+
+</manifest>

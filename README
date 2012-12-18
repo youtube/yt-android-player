@@ -1,0 +1,10 @@
+The samples in this directory are for the YouTube Android Player API.
+
+To run the samples:
+
+1) Download the latest library from the YouTube developer 
+website at https://developers.google.com/youtube/android/player/ and place
+the .jar file in the 'libs' sub-directory.
+
+2) Open the DeveloperKey.java file and replace the null DEVELOPER_KEY
+with your developer key generated from https://code.google.com/apis/console/
