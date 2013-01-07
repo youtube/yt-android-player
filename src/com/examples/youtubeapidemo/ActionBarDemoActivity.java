@@ -72,7 +72,7 @@ public class ActionBarDemoActivity extends YouTubeFailureRecoveryActivity implem
     player.setOnFullscreenListener(this);
 
     if (!wasRestored) {
-      player.loadVideo("9c6W4CCU9M4");
+      player.cueVideo("9c6W4CCU9M4");
     }
   }
 

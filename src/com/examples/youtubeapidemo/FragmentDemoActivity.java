@@ -47,7 +47,7 @@ public class FragmentDemoActivity extends YouTubeFailureRecoveryActivity {
   public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer player,
       boolean wasRestored) {
     if (!wasRestored) {
-      player.loadVideo("nCgQDjiotG0");
+      player.cueVideo("nCgQDjiotG0");
     }
   }
 

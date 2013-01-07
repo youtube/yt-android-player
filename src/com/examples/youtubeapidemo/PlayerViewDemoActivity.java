@@ -43,7 +43,7 @@ public class PlayerViewDemoActivity extends YouTubeFailureRecoveryActivity {
   public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer player,
       boolean wasRestored) {
     if (!wasRestored) {
-      player.loadVideo("wKJ9KzGQq0w");
+      player.cueVideo("wKJ9KzGQq0w");
     }
   }
 

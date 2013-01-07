@@ -86,7 +86,7 @@ public class FullscreenDemoActivity extends YouTubeFailureRecoveryActivity imple
     player.addFullscreenControlFlag(YouTubePlayer.FULLSCREEN_FLAG_CUSTOM_LAYOUT);
     player.setOnFullscreenListener(this);
     if (!wasRestored) {
-      player.loadVideo("avP5d16wEp0");
+      player.cueVideo("avP5d16wEp0");
     }
   }
 
