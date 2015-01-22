@@ -16,4 +16,15 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
+
+    dependencies {
+        compile fileTree(dir: 'libs', include: '*.jar')
+    }
+}
+
+tasks.preBuild.doFirst {
+    if(!file('libs/YouTubeAndroidPlayerApi.jar').exists()) {
+        throw new GradleException('Missing YouTubeAndroidPlayerApi.jar file. Download it and' +
+                ' place it in the libs directory.')
+    }
 }
